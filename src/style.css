@@ -169,7 +169,7 @@ p {
   transform: translateY(-799%); /* Keluar ke atas dari amplop */
 }
 #card.outside {
-  transform: translateY(825%); /* Turun sedikit ke luar amplop */
+  bottom: 0%; /* Turun sedikit ke luar amplop */
   z-index: 4;
 }
 #card.inside {
@@ -178,16 +178,25 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
+  #envelope {
+    width: 100vw;
+    height: 400px; /* Menyesuaikan tinggi untuk seluruh amplop */
+    perspective: 1000px;
+  }
+
   #card {
-    height: 20%;
+    height: 40%;
     transform: translateY(970%);
+  }
+  #card p {
+    font-size: small;
   }
   #card.open {
     display: block;
     transform: translateY(910%); /* Keluar ke atas dari amplop */
   }
   #card.outside {
-    transform: translateY(960%); /* Turun sedikit ke luar amplop */
+    bottom: 0; /* Turun sedikit ke luar amplop */
     z-index: 4;
   }
   #card.inside {
