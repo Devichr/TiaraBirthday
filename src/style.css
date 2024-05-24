@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  max-width: 100vw;
   font-family: "Arial", sans-serif;
   color: #333;
   text-align: center;
@@ -169,7 +170,7 @@ p {
   transform: translateY(-799%); /* Keluar ke atas dari amplop */
 }
 #card.outside {
-  bottom: 0%; /* Turun sedikit ke luar amplop */
+  transform: translateY(700%); /* Turun sedikit ke luar amplop */
   z-index: 4;
 }
 #card.inside {
@@ -185,7 +186,7 @@ p {
   }
 
   #card {
-    height: 40%;
+    height: 60%;
     transform: translateY(970%);
   }
   #card p {
@@ -196,7 +197,7 @@ p {
     transform: translateY(910%); /* Keluar ke atas dari amplop */
   }
   #card.outside {
-    bottom: 0; /* Turun sedikit ke luar amplop */
+    transform: translateY(700%);
     z-index: 4;
   }
   #card.inside {
