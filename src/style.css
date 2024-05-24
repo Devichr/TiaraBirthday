@@ -1,0 +1,197 @@
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  text-align: center;
+}
+h1 {
+  font-size: 4rem;
+  color: #ff69b4; /* Warna pink romantis */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #555;
+}
+#envelopeSection {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#envelopeSection:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#envelope {
+  cursor: pointer;
+  width: 900px;
+  height: 400px; /* Menyesuaikan tinggi untuk seluruh amplop */
+  position: relative;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+#envelope .flap {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top;
+  transform: rotateX(0);
+  transition: transform 0.5s;
+  z-index: 3;
+  clip-path: polygon(0 0, 100% 0, 60% 45%, 40% 45%);
+}
+#envelope .smFlap {
+  width: 100%;
+  height: 100%;
+  background-color: #e910a8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top;
+  transform: rotateX(0);
+  transition: transform 0.5s;
+  z-index: 3;
+  clip-path: polygon(0% 0%, 100% 0%, 59.7% 44.7%, 40% 44.7%);
+}
+#envelope .left {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+  z-index: 2;
+  clip-path: polygon(0 0, 51% 38%, 51% 62%, 0 100%);
+  border: 3px solid gray;
+}
+#envelope .sm-left {
+  width: 100%;
+  height: 100%;
+  background-color: #e910a8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+  z-index: 2;
+  clip-path: polygon(0.5% 1%, 50.5% 38.5%, 50.5% 61%, 0.5% 99%);
+  border: 3px solid gray;
+}
+#envelope .right {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+  z-index: 2;
+  clip-path: polygon(0 0, 51% 38%, 51% 62%, 0 100%);
+  border: 3px solid gray;
+  rotate: 180deg;
+}
+#envelope .sm-right {
+  width: 100%;
+  height: 100%;
+  background-color: #e910a8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+  z-index: 2;
+  clip-path: polygon(0.5% 1%, 50.5% 38.5%, 50.5% 61%, 0.5% 99%);
+  border: 3px solid gray;
+  rotate: 180deg;
+}
+#envelope .bottom {
+  width: 100%;
+  height: 200%;
+  background-color: gray;
+  position: absolute;
+  transition: transform 0.5s;
+  bottom: 0;
+  z-index: 2;
+  clip-path: polygon(0 0, 100% 0, 70% 30%, 30% 30%);
+  rotate: 180deg;
+}
+#envelope .sm-bottom {
+  width: 100%;
+  height: 200%;
+  background-color: #e910a8;
+  position: absolute;
+  bottom: 0;
+  transition: transform 0.5s;
+  z-index: 2;
+  clip-path: polygon(0% 0%, 100% 0%, 69.7% 29.7%, 30% 29.7%);
+  rotate: 180deg;
+}
+#envelope .flap.open {
+  transform: rotateX(-180deg);
+}
+#envelope .smFlap.open {
+  transform: rotateX(-180deg);
+}
+#envelope .body {
+  width: 100%;
+  height: 100%;
+  background-color: #d65ea8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#card {
+  width: 50%;
+  height: 60%;
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  padding: 10px;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transform: translateY(850%); /* Mulai dari dalam amplop */
+}
+#card.open {
+  display: block;
+  transform: translateY(-799%); /* Keluar ke atas dari amplop */
+}
+#card.outside {
+  transform: translateY(825%); /* Turun sedikit ke luar amplop */
+  z-index: 4;
+}
+#card.inside {
+  transform: translateY(800%); /* Kembali ke dalam amplop */
+  display: block;
+}
+
+@media only screen and (max-width: 1080px) {
+  #card {
+    height: 20%;
+    transform: translateY(970%);
+  }
+  #card.open {
+    display: block;
+    transform: translateY(910%); /* Keluar ke atas dari amplop */
+  }
+  #card.outside {
+    transform: translateY(960%); /* Turun sedikit ke luar amplop */
+    z-index: 4;
+  }
+  #card.inside {
+    transform: translateY(970%); /* Kembali ke dalam amplop */
+    display: block;
+  }
+}

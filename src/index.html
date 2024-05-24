@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script>
+      function PlayMusic() {
+        var play = document.getElementById("music");
+        play.play();
+      }
+    </script>
+  </head>
+  <body>
+    <audio loop id="music">
+      <source src="bgm/Mocca-HappyBirthday.mp3" type="audio/mpeg" />
+    </audio>
+    <div
+      class="flex items-center justify-center flex-col text-center my-4 min-h-screen bg-white w-screen bg-cover"
+      style="background-image: url('images/bgCover.jpg')"
+    >
+      <div class="shadow-lg backdrop-brightness-150 p-16">
+        <h1 class="text-2xl font-light">
+          Happy Birthday<span class="text-red-500">&hearts;</span> My love Tiara
+        </h1>
+        <p class="text-lg text-gray-600">Scroll to see your surprise</p>
+        <br />
+        <span class="text-red-500 text-5xl">
+          <button onclick="PlayMusic()">&hearts;</button> </span
+        ><br />
+        <p class="text-lg text-gray-600">Coba klik love gede ini</p>
+      </div>
+    </div>
+    <div
+      class="bg-white p-6 max-w-5xl shadow-lg border-4 rounded-md border-white grid grid-cols-4 gap-2"
+    >
+      <div class="col-span-4 text-center my-3">
+        <h1 class="text-2xl font-light">
+          Our Precious Moment<span class="text-red-500">&hearts;</span
+          ><br />Every second means the world
+        </h1>
+      </div>
+      <div class="col-span-1 row-span-2">
+        <img
+          src="images/images1.jpg"
+          alt="Photo 1"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-1 row-span-2">
+        <img
+          src="images/images2.jpg"
+          alt="Photo 2"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-2 row-span-3">
+        <img
+          src="images/images3.jpg"
+          alt="Photo 3"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-1 row-span-2">
+        <img
+          src="images/images4.jpg"
+          alt="Photo 4"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-1 row-span-2">
+        <img
+          src="images/images5.jpg"
+          alt="Photo 5"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-1 row-span-2">
+        <img
+          src="images/images6.jpg"
+          alt="Photo 6"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-1 row-span-2">
+        <img
+          src="images/images7.jpg"
+          alt="Photo 7"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-2 row-span-2">
+        <img
+          src="images/images8.jpg"
+          alt="Photo 8"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-1 row-span-2">
+        <img
+          src="images/images9.jpg"
+          alt="Photo 9"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-1 row-span-2">
+        <img
+          src="images/images10.jpg"
+          alt="Photo 10"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-1 row-span-2">
+        <img
+          src="images/images11.jpg"
+          alt="Photo 11"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-1 row-span-2">
+        <img
+          src="images/images12.jpg"
+          alt="Photo 12"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="col-span-2 row-span-2">
+        <img
+          src="images/images13.jpg"
+          alt="Photo 13"
+          class="w-full h-64 object-cover"
+        />
+      </div>
+    </div>
+    <div
+      class="flex items-center justify-center max-h-screen my-20 flex-col"
+      id="envelopeSection"
+    >
+      <div class="p-16">
+        <h1 class="text-2xl font-light">
+          I HAVE MESSAGES<span class="text-red-500">&hearts;</span>
+        </h1>
+        <p class="text-lg text-gray-600">Coba di klik amplopnya</p>
+      </div>
+
+      <div
+        id="card"
+        class="p-4 bg-white rounded-md shadow-md transform transition-transform duration-500 ease-in-out"
+      >
+        <div class="flex justify-center items-center mb-2 message flex-col">
+          <p>
+            Halooo Sayangkuuuu, akhirnyaa aku bisa juga beresinn iniiii
+            hahahahah perjuangannn bangett tauu beresinnyaa ditengah kesibukan
+            dan segala hal yang terjadi di sekitar aku, telat banget nih aku
+            beresinnya 😔😔 padahal ulang tahun kamunya tanggal 24 ya.... MAAF
+            BANGETTT GABISA PENUHIN JANJI AKU TEPAT WAKTUUU
+          </p>
+          <br /><br />
+          <h5>Klik untuk ke pesan berikutnya</h5>
+        </div>
+        <div class="flex justify-center items-center mb-2 message flex-col">
+          <p>
+            Nah sekarangg untuk harapann akuu kedepannya buat kamuuuu, harapan
+            akuuu cuman supaya kamu selalu happy dan semua yang kamu lakuin
+            senantiasa dilimpahi oleh berkat Tuhan. Amiinn, ngga lupa aku jugaa
+            berdoa semoga kamu sekaluarga sehat selalu, panjang umur,
+            dilimpahkan rezekinya, pokoknya aku mau wish you all the best not
+            only in your birthday but everyday.
+          </p>
+          <br /><br />
+          <h5>Klik untuk ke pesan berikutnya</h5>
+        </div>
+        <div class="flex justify-center items-center mb-2 message flex-col">
+          <p>
+            Aku juga tentunya seneng bangettt bisa ngerayain ulang tahun
+            kamuuuu, ini kedua kaliya aku ngerayain ulang tahun kamu dan wow
+            bangett ternyata pacarkuuiniii udah umurr 20 lagi, ngga kerasa yah
+            waktu teh kaya cepet bangett, padahal baru kemaren kita pacaran
+            secepat itu waktu berjalan, tapi secepat apapun waktu berjalan aku
+            harap rasa sayang kita gapernah renggang sama waktu dan semoga
+            kedepannya aku bisa selalu ngerayain ulang tahun kamu sampe kita
+            kakek nenek
+          </p>
+          <br /><br />
+          <h5>Klik untuk ke pesan berikutnya</h5>
+        </div>
+        <div class="flex justify-center items-center mb-2 message flex-col">
+          <p>
+            Least but not last SEMANGAATTT TERUSSS DALAM APAPUN ITUUUUU. Kamu
+            ituu kuattt lebih kuat dari apapunn, kedepannya bakal lebih banyak
+            rintangan didepan kamu tapi kamu gaperlu takut karena aku bakall
+            selalu ada buat kamuuuu, akuu senantiasa ada dan siap kapanpun kamu
+            butuh akuuuuuu
+          </p>
+          <h1 class="text-3xl font-bold">I LOVE YOUUU TIARAAA MY LOVEEE</h1>
+          <br /><br />
+          <h5>Klik untuk menutup amplop</h5>
+        </div>
+      </div>
+
+      <div id="envelope">
+        <div class="flap"></div>
+        <div class="smFlap"></div>
+        <div class="left"></div>
+        <div class="sm-left"></div>
+        <div class="right"></div>
+        <div class="sm-right"></div>
+        <div class="bottom"></div>
+        <div class="sm-bottom"></div>
+        <div class="body">
+          <div id="flower-decoration"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
