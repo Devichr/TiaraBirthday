@@ -170,7 +170,7 @@ p {
   transform: translateY(-799%); /* Keluar ke atas dari amplop */
 }
 #card.outside {
-  transform: translateY(650%); /* Turun sedikit ke luar amplop */
+  transform: translateY(910%); /* Turun sedikit ke luar amplop */
   z-index: 4;
 }
 #card.inside {
@@ -197,7 +197,7 @@ p {
     transform: translateY(910%); /* Keluar ke atas dari amplop */
   }
   #card.outside {
-    transform: translateY(350%);
+    transform: translateY(700%);
     z-index: 4;
   }
   #card.inside {
