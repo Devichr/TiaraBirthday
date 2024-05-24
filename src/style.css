@@ -187,7 +187,6 @@ p {
 
   #card {
     height: 60%;
-    width: 80vw;
     transform: translateY(970%);
   }
   #card p {
